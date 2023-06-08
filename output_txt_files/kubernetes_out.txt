@@ -1,1 +1,25 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops) voclabs:~/environment/project-ml-microservice-kubernetes (main) $ ./run_kubernetes.sh 
+pod/latest created
+NAME     READY   STATUS              RESTARTS   AGE
+latest   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+(.devops) voclabs:~/environment/project-ml-microservice-kubernetes (main) $ kubectl get pods
+NAME     READY   STATUS    RESTARTS   AGE
+latest   1/1     Running   0          31s
+(.devops) voclabs:~/environment/project-ml-microservice-kubernetes (main) $ kubectl port-forward latest 8000:80
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+^C(.devops) voclabs:~/environment/project-ml-microservice-kubernetes (main) $ ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "latest" already exists
+NAME     READY   STATUS    RESTARTS   AGE
+latest   1/1     Running   0          4m2s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+
+
