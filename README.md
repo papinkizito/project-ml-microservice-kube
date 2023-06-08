@@ -1,4 +1,4 @@
-/circleci/build/:vcsType/:user/:repo/:branch*?token=3d32ea39a6091a5c72911d675dcdc8bdd1f2ba3a
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/papinkizito/project-ml-microservice-kube/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/papinkizito/project-ml-microservice-kube/tree/main)
 
 ## Project Overview
 
