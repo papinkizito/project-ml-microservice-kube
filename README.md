@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+/circleci/build/:vcsType/:user/:repo/:branch*?token=3d32ea39a6091a5c72911d675dcdc8bdd1f2ba3a
 
 ## Project Overview
 
